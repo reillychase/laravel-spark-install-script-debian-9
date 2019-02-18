@@ -112,7 +112,10 @@ chmod -R 775 storage
 chmod -R 775 bootstrap/cache
 
 ## Link Storage directory
+ln -s /home/captifi/captifi-spark-team-billing/storage/app/public /home/captifi/captifi-spark-team-billing/public/storage
 php artisan storage:link
+cd /home/captifi
+chown captifi:captifi * -R
 
 ## Setup admin/"developer" account
 Add your e-mail address to the $developers property in the App\Providers\SparkServiceProvider.
