@@ -33,6 +33,7 @@ apt install libapache2-mod-php7.3
 
 
 a2enmod proxy_fcgi setenvif
+
 a2enconf php7.3-fpm
 
 systemctl reload apache2
