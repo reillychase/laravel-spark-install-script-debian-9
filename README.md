@@ -32,6 +32,12 @@ php7.3-bcmath php7.3-json
 apt install libapache2-mod-php7.3
 
 
+a2enmod proxy_fcgi setenvif
+a2enconf php7.3-fpm
+
+systemctl reload apache2
+
+
 ## Install Composer
 apt install curl php-cli php-mbstring git unzip
 
